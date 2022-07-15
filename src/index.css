@@ -1,0 +1,202 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(100, 50, 100);
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+}
+
+main {  
+  background-color: rgb(90, 110, 19);
+  height: 500px;
+  max-width: 800px;
+  border-radius: 5px;
+  border: 10px solid rgb(225, 150, 225);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.win {
+  box-shadow: 3px 3px 4px salmon;
+}
+
+.lose {
+  box-shadow: 3px 3px 4px black;
+}
+
+.title {
+  position: relative;
+  display: inline;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  color: rgb(19, 48, 75);
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+.dice-container {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.die-face {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-around;
+  flex-flow: row wrap
+}
+#master-die {
+    display: flex;
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(100, 50, 150);
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.master-die {
+    display: flex;
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(100, 50, 150);
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+.die-num {
+  font-size: 2rem;
+}
+
+.roll-dice {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(100, 50, 100);
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+}
+
+.roll-dice:focus {
+  outline: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.one {
+  background-color: black;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+}
+.two {
+  display: flex;
+  flex-flow: wrap;
+  background-color: black;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  
+}
+.five {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  
+}
+.three {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+}
+.dropbtn {
+  position: relative;
+  display: flex;
+  background-color: #695c65;
+  color: white;
+  font-size: 12px;
+  border: 2px solid blue;
+  border-radius: 6px;
+  cursor: pointer;
+  left: 80px;
+  padding: 5px 5px 5px;
+}
+
+.headbtn {
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #61e7d1;
+  min-width: 125px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
